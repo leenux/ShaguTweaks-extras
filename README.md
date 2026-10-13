@@ -1,25 +1,34 @@
 # 🧩 ShaguTweaks Extras — ClassicAPI
 
-A complementary fork of [ShaguTweaks-extras](https://github.com/paokkerkir/ShaguTweaks-extras) for **ShaguTweaks-ClassicAPI** and **Turtle WoW-like servers**.
+**Maintained fork:** [leenux/ShaguTweaks-extras](https://github.com/leenux/ShaguTweaks-extras)
+
+Compatible with **World of Warcraft 1.12.1** and **Turtle WoW 1.18.1** (Interface `11200`).
+
+A complementary fork of [ShaguTweaks-extras](https://github.com/paokkerkir/ShaguTweaks-extras) for **ShaguTweaks-ClassicAPI** and Turtle WoW-like servers.
 
 Focused on **stability, compatibility and performance** while keeping the original ShaguTweaks Extras experience.
 
-> This fork requires **ClassicAPI** and is designed to be used with [ShaguTweaks-ClassicAPI](https://github.com/Dusk-92/ShaguTweaks-ClassicAPI).
+> Requires **ClassicAPI** and the matching core addon [leenux/ShaguTweaks](https://github.com/leenux/ShaguTweaks) (folder name `ShaguTweaks`). Upstream ClassicAPI reference: [ShaguTweaks-ClassicAPI](https://octowow.st/git/Dusk/ShaguTweaks-ClassicAPI).
+
+## 🔧 leenux changes (vs ClassicAPI defaults)
+
+- **Key-Down Casting** default is **off** (`enabled = nil`) so action buttons keep Blizzard press-on-release until you enable the module under *Esc → Advanced Options*.
+- **Alt Self-Cast** stays off by default (depends on Key-Down Casting).
 
 ## 🔌 Requirements
 
 - **[ClassicAPI](https://github.com/brues-code/ClassicAPI) — required**
-- **[ShaguTweaks-ClassicAPI](https://octowow.st/git/Dusk/ShaguTweaks-ClassicAPI) — required**
+- **[leenux/ShaguTweaks](https://github.com/leenux/ShaguTweaks) — required** (install as folder `ShaguTweaks`)
 - **[SuperWoW](https://github.com/balakethelock/SuperWoW) — optional / recommended**
 
-ClassicAPI is the main API layer. ShaguTweaks-ClassicAPI provides the shared `ShaguTweaks.API` bridge used by Extras. SuperWoW is optional and may be used by ShaguTweaks-ClassicAPI for additional cast/GUID information.
+ClassicAPI is the main API layer. ShaguTweaks provides the shared `ShaguTweaks.API` bridge used by Extras. SuperWoW is optional and may be used for additional cast/GUID information.
 
 ## 📦 Installation
 
 1. Install **ClassicAPI**.
-2. Install **ShaguTweaks-ClassicAPI** and rename its folder to `ShaguTweaks`.
+2. Install [leenux/ShaguTweaks](https://github.com/leenux/ShaguTweaks) and rename its folder to `ShaguTweaks`.
 3. Optionally install **SuperWoW**.
-4. Rename this addon folder to `ShaguTweaks-extras`.
+4. Download from [leenux/ShaguTweaks-extras](https://github.com/leenux/ShaguTweaks-extras), rename the folder to `ShaguTweaks-extras`.
 5. Copy it to `World of Warcraft\Interface\AddOns\ShaguTweaks-extras`.
 6. Restart the game.
 
